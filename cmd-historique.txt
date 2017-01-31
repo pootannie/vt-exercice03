@@ -1,0 +1,114 @@
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git init
+Initialized empty Git repository in C:/Users/Annie/veilleTechnologique/cours03/exercice02/.git/
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>dir
+ Volume in drive C is OS
+ Volume Serial Number is 562F-E7EB
+
+ Directory of C:\Users\Annie\veilleTechnologique\cours03\exercice02
+
+2017-01-31  03:05 PM    <DIR>          .
+2017-01-31  03:05 PM    <DIR>          ..
+2017-01-29  05:53 PM                 5 .gitignore
+2017-01-29  05:53 PM    <DIR>          css
+2017-01-29  05:53 PM    <DIR>          images
+2017-01-29  05:53 PM             2,385 index.htm
+2017-01-29  05:53 PM    <DIR>          less
+               2 File(s)          2,390 bytes
+               5 Dir(s)  695,823,507,456 bytes free
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        css/
+        images/
+        index.htm
+        less/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/02_moyen.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/03_grand.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/normalize.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in index.htm.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/01_petit.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/02_moyen.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/03_grand.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/style.less.
+The file will have its original line endings in your working directory.
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git commit -m "initialisation du projet"
+[master (root-commit) 224ea0c] initialisation du projet
+ 12 files changed, 1089 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 css/01_petit.css
+ create mode 100644 css/02_moyen.css
+ create mode 100644 css/03_grand.css
+ create mode 100644 css/normalize.css
+ create mode 100644 css/style.css
+ create mode 100644 images/logo.png
+ create mode 100644 index.htm
+ create mode 100644 less/01_petit.less
+ create mode 100644 less/02_moyen.less
+ create mode 100644 less/03_grand.less
+ create mode 100644 less/style.less
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+user.name=Annie Vu
+user.email=annievu9@gmail.com
+core.editor=sublime text 3
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git branch dev
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git branch
+  dev
+* master
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git checkout dev
+Switched to branch 'dev'
+
+C:\Users\Annie\veilleTechnologique\cours03\exercice02>git branch
+* dev
+  master
+
