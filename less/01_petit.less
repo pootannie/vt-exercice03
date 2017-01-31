@@ -33,7 +33,6 @@ body{
     display : flex;
     flex-direction: column;
     font-family: arial;
-    background-image: url("../images/parautomne.jpg");
 }
 
 header, footer {
@@ -93,35 +92,32 @@ header{
 main{
     display:flex;
     flex-direction:column;
+    background-image: url("../images/parcautomne.jpg");
+
     section{
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
+        width: 70%;
+        justify-content: center;
+        margin: auto;
+
         article{
             display:flex;
             justify-content:center;
-            width:100%;
+            width: 200px;
             align-items: center;
             height : @largeur_article;
             // border: 1px solid #aaa;
             font-size: @largeur_article;
         }
 
-        &:nth-child(even) {
-            article:nth-child(1) {background-color: @couleur-base;}
-            article:nth-child(2) {background-color: @triadic-1;}
-            article:nth-child(3) {background-color: @triadic-2;}
-            article:nth-child(4) {background-color: @triadic-2;}
-            article:nth-child(5) {background-color: @triadic-2;}
-        }
-        &:nth-child(odd) {
-            article:nth-child(1) {background-color: @couleur-8;}
-            article:nth-child(2) {background-color: @couleur-9;}
-            article:nth-child(3) {background-color: @couleur-10;}
-            article:nth-child(4) {background-color: @couleur-10;}
-            article:nth-child(5) {background-color: @couleur-10;}
-        }
+        article:nth-child(1) {background-color: @couleur-8; opacity: 0.8}
+        article:nth-child(2) {background-color: @couleur-9; opacity: 0.8}
+        article:nth-child(3) {background-color: @couleur-10; opacity: 0.8}
+        article:nth-child(4) {background-color: @couleur-8; opacity: 0.8}
+        article:nth-child(5) {background-color: @couleur-9; opacity: 0.8}
     }
 }
 

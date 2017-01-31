@@ -234,4 +234,31 @@ $ git status -s
 M  cmd-historique.txt
 M  less/01_petit.less
 
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch
+* master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch developpement
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch
+  developpement
+* master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch essaie
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch -d essaie
+Deleted branch essaie (was e27b838).
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch essai
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch
+  developpement
+  essai
+* master
 
