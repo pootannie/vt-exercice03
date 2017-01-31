@@ -112,3 +112,45 @@ C:\Users\Annie\veilleTechnologique\cours03\exercice02>git branch
 * dev
   master
 
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (dev)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in index.htm.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/01_petit.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/02_moyen.less.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in less/03_grand.less.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (dev)
+$ git commit -m ":nth-child(odd)"
+[dev 5283fcf] :nth-child(odd)
+ 7 files changed, 227 insertions(+), 115 deletions(-)
+ create mode 100644 cmd-historique.txt
+ rewrite less/02_moyen.less (69%)
+ rewrite less/03_grand.less (87%)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (dev)
+$ git log
+commit 5283fcfaec4299cb43bedf0cd7705241cf921d45
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Jan 31 15:51:35 2017 -0500
+
+    :nth-child(odd)
+
+commit 224ea0c37ca5e11bd21c273b1972f68194055301
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Jan 31 15:07:44 2017 -0500
+
+    initialisation du projet
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
