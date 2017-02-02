@@ -262,3 +262,200 @@ $ git branch
   essai
 * master
 
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   css/01_petit.css
+        modified:   css/style.css
+        modified:   index.htm
+        modified:   less/01_petit.less
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   css/01_petit.css
+        modified:   css/style.css
+        modified:   less/01_petit.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch
+  developpement
+  essai
+* master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git branch
+  developpement
+  essai
+* master
+  svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git commit -m "sauver fichier css"
+[master 3ad6b4b] sauver fichier css
+ 4 files changed, 166 insertions(+), 62 deletions(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git checkout svg
+Switched to branch 'svg'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        css/01_petit.css
+        css/style.css
+        index.htm
+        less/01_petit.less
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git commit -m "verifier le code a master"
+[svg 61db52f] verifier le code a master
+ 5 files changed, 151 insertions(+), 53 deletions(-)
+ create mode 100644 img-svg/01-cercle.svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git branch master
+fatal: A branch named 'master' already exists.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git checkout master
+Switched to branch 'master'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git checkout svg
+error: Your local changes to the following files would be overwritten by checkout:
+        css/01_petit.css
+        css/style.css
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git commit -m "revenir sur branche svg"
+On branch master
+Changes not staged for commit:
+        modified:   css/01_petit.css
+        modified:   css/style.css
+
+no changes added to commit
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git commit -m "revenir sur branche svg"
+On branch master
+nothing to commit, working tree clean
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (master)
+$ git checkout svg
+Switched to branch 'svg'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git log --oneline --decorate --graph --all
+* 61db52f (HEAD -> svg) verifier le code a master
+| * 3ad6b4b (master) sauver fichier css
+|/
+* babb0e5 centrer le main et aligner les articles
+* f950710 ajout des branches
+* e27b838 (essai, developpement) changement de branche
+* 5283fcf :nth-child(odd)
+* 224ea0c initialisation du projet
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git diff --name-status master
+M       cmd-historique.txt
+M       css/01_petit.css
+M       css/style.css
+A       img-svg/01-cercle.svg
+M       index.htm
+M       less/01_petit.less
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git status
+On branch svg
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmd-historique.txt
+        modified:   css/01_petit.css
+        modified:   css/style.css
+        modified:   index.htm
+        modified:   less/01_petit.less
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git status
+On branch svg
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   cmd-historique.txt
+        modified:   css/01_petit.css
+        modified:   css/style.css
+        modified:   index.htm
+        modified:   less/01_petit.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git log
+commit 61db52fd0c4d3966e9673793e37881036261d7aa
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 2 09:32:00 2017 -0500
+
+    verifier le code a master
+
+commit babb0e5aea392073a1356d1bdac4e1ccdd43dc90
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Jan 31 17:51:45 2017 -0500
+
+    centrer le main et aligner les articles
+
+commit f950710bc3ee62b5e20da705d33f9de457396587
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Jan 31 17:35:06 2017 -0500
+
+    ajout des branches
+
+commit e27b83831b63f30bf89375c9b1cae0248be53f74
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Jan 31 16:13:03 2017 -0500
+
+    changement de branche
