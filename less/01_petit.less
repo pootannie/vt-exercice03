@@ -5,7 +5,7 @@
 @couleur-lienMenu : #fff;
 @couleur-base : #e3d47f;
 @couleur-complementaire : spin(@couleur-base, 180);
-// @couleur-contrast : contrast(@couleur-base);
+/* @couleur-contrast : contrast(@couleur-base);*/
 @couleur-contrast : contrast(@couleur-base);
 
 
@@ -29,6 +29,7 @@
 * {border: 1px solid #aaa;}
 */
 
+<<<<<<< HEAD
 .global{
     display: flex;
     flex-direction: row;
@@ -64,17 +65,63 @@ html {
     height: 200%;
     width: 100%;
     background-origin: 50% 50%;
+=======
+html {
+    height:200%;
+    width:100%;
+    background-origin:50% 50%;
+>>>>>>> detruirePrefixes
     background-image: url('../images/parcautomne.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: none;
+<<<<<<< HEAD
 
+=======
+>>>>>>> detruirePrefixes
 }
 
 body{
     display : flex;
     flex-direction: column;
     font-family: arial;
+}
+
+.global{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+body > .global:first-child, body > .global:last-child{
+    background-color: black;
+}
+
+.global:nth-child(even){
+    background-color: @couleur-8;
+    opacity: 0.8;
+
+    section{
+        article:nth-child(1) {background-color: @couleur-8; opacity: 0.8}
+        article:nth-child(2) {background-color: @couleur-9; opacity: 0.8}
+        article:nth-child(3) {background-color: @couleur-10; opacity: 0.8}
+        article:nth-child(4) {background-color: @couleur-8; opacity: 0.8}
+        article:nth-child(5) {background-color: @couleur-9; opacity: 0.8}
+    }
+}
+
+.global:nth-child(odd){
+    background-color: @couleur-9;
+    opacity: 0.8;
+
+    section{
+        article:nth-child(1) {background-color: @couleur-9; opacity: 0.8}
+        article:nth-child(2) {background-color: @couleur-10;opacity: 0.8}
+        article:nth-child(3) {background-color: @couleur-8; opacity: 0.8}
+        article:nth-child(4) {background-color: @couleur-9;opacity: 0.8}
+        article:nth-child(5) {background-color: @couleur-10; opacity: 0.8}
+    }
 }
 
 header, footer {
@@ -126,10 +173,10 @@ header{
                 a:hover{
                     background-color: #aaa;
                 } 
-            } // fin li
-        } // fin ul
-    } // fin nav
-} // fin header  
+            } /* fin li*/
+        } /* fin ul*/
+    } /* fin nav*/
+} /* fin header  */
 
 main{
     display:flex;
@@ -140,6 +187,12 @@ main{
         flex-direction:column;
         justify-content:center;
         align-items:center;
+<<<<<<< HEAD
+=======
+        /*width: 70%;*/
+        justify-content: center;
+        margin: 0 auto;
+>>>>>>> detruirePrefixes
 
         article{
             display:flex;
@@ -147,7 +200,6 @@ main{
             width: 100%;
             align-items: center;
             height : @largeur_article;
-            // border: 1px solid #aaa;
             font-size: @largeur_article;
         }
     }
