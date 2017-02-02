@@ -16,25 +16,13 @@
     background-repeat: none;
   }
   body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     font-family: arial;
   }
   .global {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
   }
@@ -47,35 +35,35 @@
     opacity: 0.8;
   }
   .global:nth-child(even) section article:nth-child(1) {
-    background-color: #e3d47f;
+    background-color: #dbaab1;
     opacity: 0.8;
   }
   .global:nth-child(even) section article:nth-child(2) {
-    background-color: #d47fe3;
+    background-color: #b1dca9;
     opacity: 0.8;
   }
   .global:nth-child(even) section article:nth-child(3) {
-    background-color: #7fe3d4;
+    background-color: #b1b1b1;
     opacity: 0.8;
   }
   .global:nth-child(even) section article:nth-child(4) {
-    background-color: #d47fe3;
+    background-color: #dbaab1;
     opacity: 0.8;
   }
   .global:nth-child(even) section article:nth-child(5) {
-    background-color: #e3d47f;
+    background-color: #b1dca9;
     opacity: 0.8;
   }
   .global:nth-child(odd) {
-    background-color: #b1b1b1;
+    background-color: #b1dca9;
     opacity: 0.8;
   }
   .global:nth-child(odd) section article:nth-child(1) {
-    background-color: #b1b1b1;
+    background-color: #b1dca9;
     opacity: 0.8;
   }
   .global:nth-child(odd) section article:nth-child(2) {
-    background-color: #b1dca9;
+    background-color: #b1b1b1;
     opacity: 0.8;
   }
   .global:nth-child(odd) section article:nth-child(3) {
@@ -95,12 +83,7 @@
     background-color: #000000;
   }
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding: 5px;
     /* fin nav*/
@@ -118,15 +101,8 @@
     /* fin li*/
   }
   header nav ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     border-bottom: 1px dotted #f9d42a;
   }
@@ -140,10 +116,7 @@
     font-size: 150%;
     padding: 3px;
     color: #ffffff;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
     flex: 1;
-    -webkit-transition: background-color 1s;
     transition: background-color 1s;
   }
   header nav ul li i {
@@ -156,60 +129,31 @@
   }
   /* fin header  */
   main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     background-image: url("../images/parcautomne.jpg");
   }
   main section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     /*width: 70%;*/
     justify-content: center;
     margin: 0 auto;
   }
   main section article {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 200px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     height: 250px;
     font-size: 250px;
   }
   footer {
     height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   footer div {
@@ -217,7 +161,6 @@
   }
   footer div i {
     color: #f9d42a;
-    -webkit-transition: color 1s;
     transition: color 1s;
   }
   footer div i:hover {

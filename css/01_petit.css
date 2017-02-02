@@ -19,8 +19,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: arial;
 }
 .global {
@@ -29,11 +29,11 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 body > .global:first-child,
@@ -45,35 +45,35 @@ body > .global:last-child {
   opacity: 0.8;
 }
 .global:nth-child(even) section article:nth-child(1) {
-  background-color: #e3d47f;
+  background-color: #dbaab1;
   opacity: 0.8;
 }
 .global:nth-child(even) section article:nth-child(2) {
-  background-color: #d47fe3;
+  background-color: #b1dca9;
   opacity: 0.8;
 }
 .global:nth-child(even) section article:nth-child(3) {
-  background-color: #7fe3d4;
+  background-color: #b1b1b1;
   opacity: 0.8;
 }
 .global:nth-child(even) section article:nth-child(4) {
-  background-color: #d47fe3;
+  background-color: #dbaab1;
   opacity: 0.8;
 }
 .global:nth-child(even) section article:nth-child(5) {
-  background-color: #e3d47f;
+  background-color: #b1dca9;
   opacity: 0.8;
 }
 .global:nth-child(odd) {
-  background-color: #b1b1b1;
+  background-color: #b1dca9;
   opacity: 0.8;
 }
 .global:nth-child(odd) section article:nth-child(1) {
-  background-color: #b1b1b1;
+  background-color: #b1dca9;
   opacity: 0.8;
 }
 .global:nth-child(odd) section article:nth-child(2) {
-  background-color: #b1dca9;
+  background-color: #b1b1b1;
   opacity: 0.8;
 }
 .global:nth-child(odd) section article:nth-child(3) {
@@ -98,8 +98,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 5px;
   /* fin nav*/
 }
@@ -121,11 +121,11 @@ header nav ul li {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-bottom: 1px dotted #f9d42a;
 }
 header nav ul li:first-child {
@@ -139,8 +139,8 @@ header nav ul li a {
   padding: 3px;
   color: #ffffff;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
@@ -159,8 +159,8 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url("../images/parcautomne.jpg");
 }
 main section {
@@ -169,15 +169,15 @@ main section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   /*width: 70%;*/
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
 main section article {
@@ -185,12 +185,12 @@ main section article {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 200px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 250px;
   font-size: 250px;
 }
@@ -201,14 +201,14 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer div {
   width: 30px;

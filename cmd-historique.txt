@@ -459,3 +459,129 @@ Author: Annie Vu <annievu9@gmail.com>
 Date:   Tue Jan 31 16:13:03 2017 -0500
 
     changement de branche
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git push https://github.com/pootannie/vt-exercice02
+fatal: The current branch svg has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/pootannie/vt-exercice02 svg
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git status
+On branch svg
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   cmd-historique.txt
+        modified:   css/01_petit.css
+        modified:   css/style.css
+        modified:   index.htm
+        modified:   less/01_petit.less
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmd-historique.txt
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git add .
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git commit -m "pour remise"
+[svg c750a7c] pour remise
+ 5 files changed, 481 insertions(+), 53 deletions(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git status
+On branch svg
+nothing to commit, working tree clean
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git push https://github.com/pootannie/vt-exercice02
+fatal: The current branch svg has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/pootannie/vt-exercice02 svg
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git branch
+  developpement
+  essai
+  master
+* svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git branch detruirePrefixes
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (svg)
+$ git checkout detruirePrefixes
+Switched to branch 'detruirePrefixes'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (detruirePrefixes)
+$ git status
+On branch detruirePrefixes
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmd-historique.txt
+        modified:   css/01_petit.css
+        modified:   css/02_moyen.css
+        modified:   css/03_grand.css
+        modified:   css/style.css
+        modified:   less/01_petit.less
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (detruirePrefixes)
+$ git add .
+warning: LF will be replaced by CRLF in css/01_petit.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/02_moyen.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/03_grand.css.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in css/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (detruirePrefixes)
+$ git status
+On branch detruirePrefixes
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   cmd-historique.txt
+        modified:   css/01_petit.css
+        modified:   css/02_moyen.css
+        modified:   css/03_grand.css
+        modified:   css/style.css
+        modified:   less/01_petit.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (detruirePrefixes)
+$ git push https://github.com/pootannie/vt-exercice02
+fatal: The current branch detruirePrefixes has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/pootannie/vt-exercice02 detruirePrefixes
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (detruirePrefixes)
+$ git push --set-upstream https://github.com/pootannie/vt-exercice02 detruirePrefixes
+Counting objects: 38, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (38/38), 740.79 KiB | 0 bytes/s, done.
+Total 38 (delta 24), reused 0 (delta 0)
+remote: Resolving deltas: 100% (24/24), completed with 5 local objects.
+Branch detruirePrefixes set up to track remote branch detruirePrefixes from https://github.com/pootannie/vt-exercice02.
+To https://github.com/pootannie/vt-exercice02
+ * [new branch]      detruirePrefixes -> detruirePrefixes
+
+Annie@Annie MINGW64 ~/veilleTechnologique/cours03/exercice02 (detruirePrefixes)
+$ git push https://github.com/pootannie/vt-exercice02                           Everything up-to-date
