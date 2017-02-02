@@ -1,0 +1,176 @@
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git branch
+* detruirePrefixes
+  developpement
+  essai
+  master
+  svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git branch -d developpement
+Deleted branch developpement (was e27b838).
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git branch
+* detruirePrefixes
+  essai
+  master
+  svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git branch -d essai
+Deleted branch essai (was e27b838).
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        cmd-historique.txt
+        css/01_petit.css
+        css/style.css
+        less/01_petit.less
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git commit -m "retour a branch master"
+[detruirePrefixes 6199141] retour a branch master
+ 6 files changed, 253 insertions(+), 203 deletions(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        cmd-historique.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git status
+On branch detruirePrefixes
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmd-historique.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git add .
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        cmd-historique.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git commit -m "retour a branch master + compiler"
+[detruirePrefixes f92fb33] retour a branch master + compiler
+ 1 file changed, 587 deletions(-)
+ rewrite cmd-historique.txt (100%)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (detruirePrefixes)
+$ git checkout master
+Switched to branch 'master'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git branch
+  detruirePrefixes
+* master
+  svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git merge detruirePrefixes
+Auto-merging less/01_petit.less
+CONFLICT (content): Merge conflict in less/01_petit.less
+Auto-merging index.htm
+Auto-merging css/style.css
+CONFLICT (content): Merge conflict in css/style.css
+Auto-merging css/01_petit.css
+CONFLICT (content): Merge conflict in css/01_petit.css
+Automatic merge failed; fix conflicts and then commit the result.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        modified:   cmd-historique.txt
+        modified:   css/02_moyen.css
+        modified:   css/03_grand.css
+        new file:   img-svg/01-cercle.svg
+        modified:   index.htm
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   css/01_petit.css
+        both modified:   css/style.css
+        both modified:   less/01_petit.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master|MERGING)
+$ git add .
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master|MERGING)
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        modified:   cmd-historique.txt
+        modified:   css/01_petit.css
+        modified:   css/02_moyen.css
+        modified:   css/03_grand.css
+        modified:   css/style.css
+        new file:   img-svg/01-cercle.svg
+        modified:   index.htm
+        modified:   less/01_petit.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master|MERGING)
+$ git branch
+  detruirePrefixes
+* master
+  svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master|MERGING)
+$ git commit -m "supprimer des branches inutiles et fusionner detruirePrefixes sur master"
+[master 397cb18] supprimer des branches inutiles et fusionner detruirePrefixes sur master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git branch
+  detruirePrefixes
+* master
+  svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git branch -d svg
+Deleted branch svg (was c750a7c).
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git branch
+  detruirePrefixes
+* master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git branch -d detruirePrefixes
+Deleted branch detruirePrefixes (was f92fb33).
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git branch
+* master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git branch exercice
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice03 (master)
+$ git checkout exercice
+Switched to branch 'exercice'
